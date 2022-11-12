@@ -1,0 +1,487 @@
+/*Universal*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;    
+    font-family: "Mansalva";
+ } 
+ 
+ h2 {
+    font-size: 40px;
+    font-family: Mansalva;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: -4px -4px 0 black;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p, h3 {
+    text-align: center;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  span:hover {
+    cursor: pointer;
+    color: blue;
+    transition: .5s color ease-in ;
+  }
+ 
+  body {
+     margin: 0;
+  }
+ 
+ /* Header */
+ 
+ header {
+   z-index: 1;
+   position: fixed;
+   width: 100%;
+   opacity: 85%;
+   border-bottom: 2px solid whitesmoke;  
+   background-color: black; 
+ 
+ }
+ 
+ .logo{
+    display: flex;
+    justify-content:flex-start;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+ }
+ 
+ .co-name div {
+   align-self: flex-start;
+   justify-content: center;
+ }
+ 
+ .co-name h1 {
+   font-family: Mansalva;
+   font-size: 50px;
+   line-height: 35px;
+   padding-left: 20px;
+ 
+ }
+ 
+ .co-name h3 {
+   font-family: Mansalva;
+   font-size: 20px;
+ }
+
+ nav .mobile {
+  display: none;
+ }
+ 
+ nav {
+   display: flex;
+   align-items: center;
+   padding: 8px 2rem;
+   justify-content: space-around;
+ }
+ 
+ nav ul{
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ nav ul li {
+   display: flex;
+ }
+
+ nav ul li a {
+   font-size: 22px;
+   text-decoration: none;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+   display: block; 
+   text-align: center;
+   justify-content: flex-end;
+   height: 50px;
+   width: 175px;
+   padding: 0.8rem 1rem;
+   color: whitesmoke;
+   background-color: rgb(79, 79, 185);
+   font-weight: 500;
+   margin: 0 8px;
+   border-radius: 50px 50px 50px 50px;  
+   border: 2px solid black;
+ }
+ 
+ nav ul li a:hover {
+   cursor: pointer;
+   color: #fff;
+   background-color: rgba(49, 30, 196, 0.6);
+   border-radius: 50px 50px 50px 50px;  
+   border: 1px solid black; 
+ }
+
+ .bg-img {   
+    background-image: url("resources/Beer\ Flight.jpg");
+    background-position: center;
+    width: 100%;
+    height:700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }    
+
+ /*About Us*/
+
+  .about-us{
+    background-color: black;
+  }
+
+  .our-brewers {
+    background-image: url("resources/Kegs.jpg");
+    background-position:75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .brewers {
+    background-color: black;
+    padding-top: 70px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .brewer-profile {
+    padding: 20px;
+    flex-basis: 280px;
+  }
+
+  .brewer-profile h3 {
+    font-weight: bolder;
+    font-size: 28px;
+  
+  }
+  
+  .brewer-profile img {
+    border-radius: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .hours-location{
+    background-color: black;
+  }
+
+  .location {
+    color: white;
+  }
+
+
+  .hours-location ul {
+    list-style: none;
+    background-color: black;
+  }
+ 
+  .hours-location li, p {
+    text-align: center;
+    font-family: Mansalva;
+    font-size: 20px;
+  }
+
+  /*Beers*/
+
+  #beer-container {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 100px;
+    background-color: black;
+  }
+
+  .beer-head {
+    background-image: url("resources/Our\ Beer.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .our-beer, .our-beer-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .beers {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .beers img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    padding: 10px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  
+  .beers span {
+    padding: 5px;
+    min-width: 240px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /*On Tap*/
+
+  .tap-head {
+    background-image: url("resources/Beer\ Taps.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #tap-container {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 100px;
+    background-color: black;
+  }
+  
+  .tap-1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .tap-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .tap-sub-head{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .on-tap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .on-tap img {
+    width: 175px;
+    padding: 10px;
+    height: 175px;
+  }
+
+  .on-tap span {
+    width: 100%;
+  }
+  
+
+
+  /*Merchandise*/
+
+  .merch-head {
+    background-image: url("resources/Merch.jpg");
+  background-position:40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  }
+
+  #merch-container {
+    min-height: 500px;
+    margin: auto;
+    padding-top: 100px;
+    background-color: black;
+  }
+  
+  .merch, .merch-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .items img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 10px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .items span {
+    padding: 5px;
+    min-width: 240px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Footer*/
+
+footer {
+  border-top: 2px solid whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 85px;
+  width: 100%;
+  background-color: darkblue;
+  padding-bottom: 5px;
+
+}
+
+footer h6 {
+  padding-left: 5px;
+  font-weight: lighter;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+  font-size: 14px;
+  background-color: darkblue;
+  display: flex;
+  width:250px;
+
+}
+
+footer p{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+}
+
+.contact {
+  text-align: center;
+  font-weight: lighter;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+  font-size: 16px;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot {
+   background-color: darkblue;
+   display: flex;
+   
+}
+
+footer a{
+   background-color: darkblue;
+   display: flex;
+}
+
+footer img {
+  opacity: 75%;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;  
+  background-color: darkblue;
+  display: flex;
+}
+
+
+footer h5 {
+  padding-right: 10px;
+  font-weight: lighter;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+  font-size: 20px;
+  background-color: darkblue;
+display: flex;
+}
+
+/*Responsiveness*/
+
+@media only screen and (max-width: 750px) {
+footer h5 {
+  font-size: 14px;
+}
+
+footer h6{
+  display: none;
+}
+
+footer img{
+  height: 35px;
+  width: 35px;
+}
+
+footer p {
+  font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 360px) {
+  footer h5 {
+    display: none;
+  }
+  
+  footer h6{
+    display: none;
+  }
+  
+  footer img{
+    display: none;
+  }
+  
+  footer p {
+    display: none;
+  }
+  }
+
+    @media only screen and (max-width: 500px) {
+      .desktop ul li a{
+        display: none;
+    }
+      
+  }
